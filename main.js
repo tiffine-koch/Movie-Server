@@ -21,13 +21,11 @@ function sendRequest() {
 
       if(data.Response === 'True') {
         var $movie = movieList.map(function(movie) {
-          // var $title = $('<div>').text(movie.Title).addClass('title');
-          // var $year = $('<div>').text(movie.Year).addClass('year');
-          var $image= '<img class="col-xs-4"' + 'src=' + movie.Poster + '>'
+          var $title = $('<div>').text(movie.Title).addClass('title');
+          var $year = $('<div>').text(movie.Year).addClass('year');
+          var $image= '<img class="image"' + 'src=' + movie.Poster + '>'
           var $imdb = 'http://www.imdb.com/title/' + movie.imdbID;
-          // $('#movieDisplay').append($title);
-          // $('#movieDisplay').append($year);
-          $('#movieDisplay').append('<a href=' + $imdb + '>' + $image + '</a>').addClass('card');
+          $('#movieDisplay').append($title, $year, '<a href=' + $imdb + '>' + $image + '</a>').addClass('card');
         });
 
       } else if(data.Response === 'False') {

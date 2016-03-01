@@ -50,14 +50,23 @@ p {
   margin-top: 20px;
 }
 
-.card {
+/*.image {
   border: 3px solid red;
   display: inline-block;
   width: auto;
   margin: 5px;
   padding: 5px;
-  /*min-height: 100px;*/
-  /*min-width: 100px;*/
+  max-height: 300px;
+  min-width: auto;
+}*/
+.image {
+  border: 3px solid red;
+  display: inline-block;
+  width: auto;
+  margin: 5px;
+  padding: 5px;
+  min-height: 150px;
+  min-width: auto;
 }
 
 select {
@@ -74,6 +83,13 @@ h4 {
   /*text-align: center;*/
 }
 
+/*.col-xs-6:hover {
+  border: 5px solid red;
+}*/
+.image:hover {
+  border: 7px solid red;
+}
+
 .message {
   margin-top: 20px;
   color: red;
@@ -83,7 +99,6 @@ h4 {
 }
 
 .title {
-  /*margin-top: 10px;*/
   color: red;
   font-weight: bold;
   font-size: 10px;
