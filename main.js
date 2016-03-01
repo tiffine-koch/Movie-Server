@@ -3,7 +3,6 @@
 $(function() {
   $('#submit').click(sendRequest);
 });
-// var movieList = [], text, $card;
 
 function sendRequest() {
   var title = $('#movieInput').val().trim();
@@ -38,12 +37,4 @@ function sendRequest() {
         }
       }
   });
-}
-
-function createList() {
-  console.log('create list function');
-  var $movie = data.map(function(movie){
-      makeMovieCard(data);
-    });
-  $('#movieDisplay').append($movie);
 }
