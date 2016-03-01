@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-header">
+  <h1 id="bigL">Netflix and Chill <small class="lilL">good movies. cheap dates.</small></h1>
+  </div>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5"><img id="picture" src="mug.png" alt=""></div>
+      <div class="col-md-7" id="buttonRow">
+        <label id="movieLabel" for="">Find a Movie</label>
+        <input type="text" id="movieInput" placeholder="Enter Film Name Here">
+        <select name="" id="">
+          <option value="movie">Movies</option>
+          <option value="series">Series</option>
+          <option value="episodes">Episode</option>
+        </select>
+        <!-- <div class="btn-group">
+          <button id="catEntry" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Add Category<span class="caret"></span></button>
+          <ul id="catDropDown" class="dropdown-menu">
+            <li class="dropList" selected="selected" value="movie"><a href="#">Movie</a></li>
+            <li class="dropList" selected="selected" value="series"><a href="#">Series</a></li>
+            <li class="dropList" selected="selected" value"Episode"><a>Episode</a></li>
+          </ul>
+        </div> -->
+      </div>
+      <!-- <p>Get More Picky</p> -->
+      <label class="year" for="">Year Released</label>
+      <input id="yearInput" class="year" type="number" placeholder="Enter Film Year (if you want)">
+      <button id="submit" class="btn btn-danger" type="submit">Click for Flicks</button>
+    </div>
+  </div>
+  <div id="alert"></div>
+  <hr>
+  <div class="container" id="movieList">
+    <div id="movieDisplay"></div>
+      <div class="card" id="template">
+        <div><h4>Movie</h4></div>
+        <div class="title"></div>
+        <div class="year">Friends</div>
+        <div class="rated">Friends</div>
+        <div class="image">Friends</div>
+        <div>Year: <span class="id">25</span></div>
+        <div class="link"><a href="#"></a></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Created by Tiffine Koch * February 29, 2016</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
