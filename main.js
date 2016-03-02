@@ -6,14 +6,14 @@ $(function() {
 
 function sendRequest() {
   var title = $('#movieInput').val().trim();
-  var type = $('#catDropDown').text();
+  var type = $('#catDropDown').val();
   var year = $('#yearInput').val();
   $('#alert').empty();
   $('#movieDisplay').empty();
 
   $.ajax({
 
-    url: "http://www.omdbapi.com/?s=" + title + "&type=" + type + "&yr=" + year + "&r=json",
+    url: "http://www.omdbapi.com/?s=" + title + "&type=" + type + "&y=" + year + "&r=json",
 
     type: "GET",
     success: function(data) {
